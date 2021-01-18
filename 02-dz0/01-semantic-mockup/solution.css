@@ -2,40 +2,51 @@ body {
     margin: 0;
 }
 
-header{
-    background-color: orange;
+.header{
+    background-color: red;
     text-align: center;
 }
 
-h1 {
-  background-color:red;
+.mainTitle {
   font-weight: bold;
   color: white;
   margin: 0;
 }
 
-main {
+.nav{
+    background-color: orange;
+    padding: 20px 0;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.nav a {
+    color: white;
+    font-size: 24px;
+}
+
+.content {
     background-color:green;
     padding: 5px 2px;
   }
 
-nav {
-    background-color:orange;
-    font-size: 20px;
-    color: white;
-    display: inline-block;
-    text-decoration: underline;
-    margin: 5px 20px;
-}
 
-article {
+.article {
     background-color: blue;
     color: white;
     margin: 5px 5px;
     padding: 5px;
 }
 
-footer {
+.footer {
     background-color: rgb(132, 0, 255);
     color: white;
     font-weight: bold;

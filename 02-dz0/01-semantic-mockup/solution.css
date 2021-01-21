@@ -7,28 +7,33 @@ body {
     text-align: center;
 }
 
-.mainTitle {
+.main-title {
   font-weight: bold;
   color: white;
   margin: 0;
 }
 
-.nav{
+.nav {
     background-color: orange;
     padding: 20px 0;
 }
 
-.nav ul {
+.nav-list {
     margin: 0;
     padding: 0;
 }
 
-.nav li {
+.nav .trilogy {
+    margin: 0;
+    padding: 0;
+}
+
+.nav .item {
     display: inline-block;
     margin: 0 30px;
 }
 
-.nav a {
+.nav .link {
     color: white;
     font-size: 24px;
 }

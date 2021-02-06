@@ -1,93 +1,70 @@
-
-.box {
+.histogram {
     display: flex;
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
     border-radius: 8px;
-    width: 354px;
-    height: 185px;
+    /* width: 354px;
+    height: 185px; */
+    height: 100%;
     padding: 16px 24px 24px 26px;
-    align-items: flex-end;
-    justify-content: left;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.box1 {
-    align-items: flex-end;
+.histogram__head {
+    align-items: flex-start;
     display: flex;
-    position: relative;
+    width: 100%;
+    flex-direction: column;
 }
 
-.total {
+.histogram__head-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.histogram__head-total {
     font-size: 16px;
     color: black;
-    position: absolute;
-    flex-wrap: nowrap;
-    width:150px;
-    margin-bottom: 10px;
 }
-.number {
+
+.histogram__head-number {
     font-size: 20px;
     color: black;
     background-color: transparent;
-    position: absolute;
-    top: 100%;
+    margin-top: 6px;
 }
 
-.link {
-    position: absolute;
+.histogram__head-link {
     color: #4263EB;
     font-size: 16px;
-    margin-left: 240px;
-    width: 100px;
 }
 
-.box2 {
+.histogram__graph {
     flex-direction: column;
     align-items: center;
     display: flex;
+    width: 100%;
 }
 
-.histogram {
+.histogram__graph-columns {
     display: flex;
+    align-items: flex-end;
+    height: 50px;
+    width: 100%;
 }
-.histogram > div {
-    width: 9px;
+
+.histogram__bar {
+    flex-grow: 0.0333;
+    min-width: 9px;
     margin-right: 1px;
     display: flex;
     flex-direction: column-reverse;
-}
-
-.histogram>div:nth-child(1) div, .histogram>div:nth-child(8) div, .histogram>div:nth-child(14) div{
-    height: 50px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(2) div, .histogram>div:nth-child(12) div, .histogram>div:nth-child(19) div, .histogram>div:nth-child(23) div, .histogram>div:nth-child(29) div{
-    height: 35px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(3) div, div:nth-child(5) div,  div:nth-child(10) div, div:nth-child(18) div {
-    height: 22px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(4) div, .histogram>div:nth-child(7) div, .histogram>div:nth-child(16) div, .histogram>div:nth-child(22) div{
-    height: 39px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(6) div, .histogram>div:nth-child(11) div,  .histogram>div:nth-child(17) div,  .histogram>div:nth-child(20) div,  .histogram>div:nth-child(25) div,  .histogram>div:nth-child(27) div{
-    height: 30px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(9) div, .histogram>div:nth-child(13) div, .histogram>div:nth-child(15) div, .histogram>div:nth-child(21) div, .histogram>div:nth-child(26) div, .histogram>div:nth-child(28) div{
-    height: 11px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(24) div{
-    height: 45px;
-    background: #4263EB;
-}
-.histogram>div:nth-child(30) div{
-    height: 17px;
     background: #4263EB;
 }
 
+.histogram__bar:last-child {
+    margin-right: 0;
+}

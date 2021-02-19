@@ -14,12 +14,13 @@
 
 .modal {
     position: absolute;
-    left: calc(50% - 214px);
+    /* left: calc(50% - 214px); */
     z-index: 99;
     background: #fff;
     padding: 40px;
     border-radius: 8px;
     width: 428px;
+    transform: translateX(50%);
 }
 
 .modal__title {
@@ -42,5 +43,6 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
-

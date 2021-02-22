@@ -54,3 +54,56 @@
     align-items: center;
     height: 100%;
 }
+
+.preview-flex__card-preview > .histogram {
+    width: 300px;
+    height: 157px;
+}
+
+.preview-flex__card-preview > .calendar {
+    padding: 10px 26px;
+}
+
+.preview-flex__card-preview > .calendar .calendar__title {
+    margin-bottom: 5px;
+}
+
+.preview-flex__card-preview > .calendar .calendar__list {
+    grid-template-rows: repeat(6, 30px);
+}
+
+.preview-flex__card-preview--modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-flex__card-preview--modal #modal-open {
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.preview-flex__card-preview > .modal {
+    position: relative;
+    transform: unset;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.preview-flex__card-preview > .modal .modal__title {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.preview-flex__card-preview > .modal .modal__text {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+.preview-flex__card-preview > .tooltip-wrapper .tooltip__text {
+    display: block;
+}

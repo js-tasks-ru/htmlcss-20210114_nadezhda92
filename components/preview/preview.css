@@ -1,51 +1,58 @@
-.preview__flex {
-    overflow: hidden;
+.preview .header,
+.preview .footer {
+    background-color: #fff;
+}
+
+.preview .header {
+    padding: 40px 0;
+}
+.preview .header__title {
+    margin: 0;
+}
+.preview .container {
     max-width: 1110px;
     margin: 0 auto;
+    display: block;
+    width: 95%;
 }
 
-.page__box {
-    display: flex;
-    flex-wrap: wrap;
+.preview-wrapper {
+   border: 1px solid #dde2e5;
+   border-right: none;
+   border-left: none;
 }
 
-.preview-flex__card {
-    /* flex-grow: 1;
-    flex-shrink: 1; */
-    flex-basis: 350px;
+.preview-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 68px 0 92px;
+}
+
+.preview__card {
     height: 367px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
 }
 
-.preview-flex__card:nth-child(3n+3) {
-    margin-right: 0;
-}
-
-.preview-flex__card-name {
+.preview__card-name {
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
     text-align: center;
-    margin-bottom: 30px;
     text-decoration: none;
     color: #000;
+    position: absolute;
+    bottom: 30px;
+    margin: 0;
 }
 
-.preview-flex__card-name:hover {
+.preview__card-name:hover {
     text-decoration: underline;
 }
 
-.preview-flex__card-preview {
-    max-width: 350px;
+.preview__card-preview {
     padding-right: 25px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -53,38 +60,49 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    text-decoration: none;
+    position: relative;
 }
 
-.preview-flex__card-preview > .histogram {
+.preview__card-preview:hover .preview__card-name {
+    text-decoration: underline;
+}
+
+.preview__card-preview > .histogram {
     width: 300px;
     height: 157px;
 }
 
-.preview-flex__card-preview > .calendar {
+.preview__card-preview > .calendar {
     padding: 10px 26px;
 }
 
-.preview-flex__card-preview > .calendar .calendar__title {
+.preview__card-preview > .calendar .calendar__title {
     margin-bottom: 5px;
 }
 
-.preview-flex__card-preview > .calendar .calendar__list {
+.preview__card-preview > .calendar .calendar__list {
     grid-template-rows: repeat(6, 30px);
 }
 
-.preview-flex__card-preview--modal {
+.preview__card-preview--modal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.preview-flex__card-preview--modal #modal-open {
+.preview__card-preview--modal #modal-open {
     margin-bottom: 20px;
     margin-left: 0;
 }
 
-.preview-flex__card-preview > .modal {
+.preview__card-preview--modal #modal-open,
+.preview__card-preview--modal .modal__close {
+    pointer-events: none;
+}
+
+.preview__card-preview > .modal {
     position: relative;
     transform: unset;
     border: 1px solid #ccc;
@@ -93,17 +111,39 @@
     box-sizing: border-box;
 }
 
-.preview-flex__card-preview > .modal .modal__title {
+.modal--preview {
+    position: relative;
+    transform: unset;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.modal--preview .modal__title {
     font-size: 14px;
     line-height: 16px;
 }
 
-.preview-flex__card-preview > .modal .modal__text {
+.modal--preview .modal__text {
     font-size: 10px;
     line-height: 12px;
 }
 
-
-.preview-flex__card-preview > .tooltip-wrapper .tooltip__text {
+.preview__card-preview > .tooltip-wrapper .tooltip__text {
     display: block;
+}
+
+@media screen and (max-width: 1140px) {
+
+    .preview-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .preview-box {
+        grid-gap: 15px;
+    }
 }

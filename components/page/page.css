@@ -1,17 +1,6 @@
-.header {
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
 .header__title {
     font-weight: 500;
     font-size: 50px;
-    line-height: 64px;
-}
-
-.content {
-    background: #F9FAFC;
-    padding: 67px 160px 174px;
 }
 
 .footer {
@@ -31,7 +20,7 @@
     line-height: 24px;
     text-align: center;
     margin: 32px auto 0;
-    width: 640px;
+    max-width: 640px;
 }
 
 .sidebar {
@@ -46,6 +35,7 @@
     font-size: 20px;
     line-height: 26px;
     color: #212429;
+    margin-top: 0;
 }
 
 .sidebar__list {
@@ -73,13 +63,11 @@
 .container {
     display: flex;
     justify-content: start;
-    background-color: #F9FAFC;
     max-width: 1440px;
     margin: 82px auto 0;
 }
 
 .page-content {
-    margin-top: 36px;
     margin-bottom: 166px;
     margin-right: 165px;
     background-color: #fff;
@@ -88,6 +76,8 @@
     padding-top: 32px;
     padding-left: 48px;
     min-height: 745px;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
 }
 
 .page-content-title {
@@ -98,12 +88,16 @@
     margin-bottom: 24px;
 }
 
-.page-content .histogram {
-    width: 300px;
-    height: 157px;
-}.page-content .tooltip-wrapper {
-    height: unset;
-    justify-content: start;
-    margin-top: 50px;
-    margin-left: 100px;
+@media screen and (max-width: 1024px) {
+
+    .header__title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .header__title {
+        font-size: 28px;
+    }
 }

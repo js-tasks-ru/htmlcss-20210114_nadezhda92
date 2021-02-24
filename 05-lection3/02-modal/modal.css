@@ -13,13 +13,15 @@
 }
 
 .modal {
-    position: absolute;
     z-index: 99;
     background: #fff;
     padding: 40px;
     border-radius: 8px;
     width: 428px;
-    transform: translateX(50%);
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal__title {

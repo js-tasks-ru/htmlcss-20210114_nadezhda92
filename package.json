@@ -4,6 +4,7 @@
   "description": "Course Materials",
   "scripts": {
     "build": "postcss assets/css/main.scss -o build/index.css",
+    "build-lib": "postcss assets/css/lib.scss -o build/lib-index.css",
     "fix": "stylelint --fix **/*.scss",
     "test": "cross-env NODE_ENV=test mocha --no-warnings --reporter=reporter.js --ignore=node_modules/** **/*.test.js"
   },

@@ -6,7 +6,7 @@
     border: 1px solid #DDE2E5;
     box-sizing: border-box;
     border-radius: 8px;
-    border-color: none;
+    font-size: 20px;
     padding: 17px 35px 17px 24px;
 }
 
@@ -32,8 +32,6 @@
     border: 1px solid #4263EB;
     box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
     color: #495057;
-    font-size: 20px;
-    line-height: 26px;
     box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
     border-radius: 8px;
   }

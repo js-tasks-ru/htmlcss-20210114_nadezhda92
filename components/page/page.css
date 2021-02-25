@@ -1,8 +1,3 @@
-.header__title {
-    font-weight: 500;
-    font-size: 50px;
-}
-
 .footer {
     padding-top: 71px;
     padding-bottom: 136px;
@@ -62,7 +57,7 @@
 
 .container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     max-width: 1440px;
     margin: 82px auto 0;
 }
@@ -75,6 +70,7 @@
     height: 100%;
     padding-top: 32px;
     padding-left: 48px;
+    padding-right: 48px;
     min-height: 745px;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -86,18 +82,4 @@
     line-height: 38px;
     color: #495057;
     margin-bottom: 24px;
-}
-
-@media screen and (max-width: 1024px) {
-
-    .header__title {
-        font-size: 36px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-
-    .header__title {
-        font-size: 28px;
-    }
 }

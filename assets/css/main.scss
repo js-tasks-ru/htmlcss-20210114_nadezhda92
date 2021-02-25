@@ -1,4 +1,4 @@
-@import '../normalize.css';
+@import './normalize.css';
 @import '../fonts/fonts.css';
 
 * {
@@ -8,4 +8,15 @@
 html,
 body {
   font-size: 0;
+  background-color: #F9FAFC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 30px;
 }

@@ -3,6 +3,25 @@
     background-color: #fff;
 }
 
+.preview .header__title {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .preview .header__title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .preview .header__title {
+        font-size: 28px;
+    }
+}
+
 .preview .header {
     padding: 40px 0;
 }
@@ -109,6 +128,8 @@
     padding: 20px;
     width: 300px;
     box-sizing: border-box;
+    top: unset;
+    left: unset;
 }
 
 .modal--preview {
@@ -132,6 +153,10 @@
 
 .preview__card-preview > .tooltip-wrapper .tooltip__text {
     display: block;
+}
+
+.preview__card-preview > .skeleton {
+    width: 100%;
 }
 
 @media screen and (max-width: 1140px) {

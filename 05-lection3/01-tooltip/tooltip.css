@@ -44,3 +44,6 @@
     display: block;
 }
 
+.page-content .tooltip-wrapper {
+    margin-left: 52px;
+}
